@@ -7,7 +7,7 @@ for x, productivity_module in pairs(productivity_modules) do
 
     item.name = productivity_module.name
     item.localised_name = { "module-name.productivity", productivity_module.teir }
-    --item.icon = "__darkstar-modules__/graphics/icons/" .. productivity_module.name .. ".png"    
+    item.icon = "__darkstar-modules__/graphics/icons/" .. productivity_module.name .. ".png"    
     item.order = productivity_module.order
     item.subgroup = "ds-modules"
     item.tier = productivity_module.teir

@@ -8,7 +8,7 @@ for x, beacon in pairs(beacons) do
     item = util.table.deepcopy(item_base)
 
     entity.name = beacon.name    
-    --entity.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
+    entity.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
     entity.minable.result = beacon.name
     entity.max_health = beacon.health
     entity.energy_usage = beacon.energy_con_kw .. "kW"
@@ -18,7 +18,7 @@ for x, beacon in pairs(beacons) do
     
     
     item.name = beacon.name
-    --item.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
+    item.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
     item.place_result = beacon.name
     item.order = beacon.order
     item.subgroup = "ds-modules"
