@@ -1,4 +1,4 @@
-require("prototypes.configuration")
+require("configuration")
 
 require("prototypes.beacons")
 require("prototypes.speed_modules")
