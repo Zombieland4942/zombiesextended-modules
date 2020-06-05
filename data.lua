@@ -1,4 +1,5 @@
 require("configuration")
+require("prototypes.technologies")
 
 require("prototypes.beacons")
 require("prototypes.speed_modules")

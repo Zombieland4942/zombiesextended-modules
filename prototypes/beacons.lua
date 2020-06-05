@@ -25,5 +25,14 @@ for x, beacon in pairs(beacons) do
     item.order = beacon.order
     item.subgroup = "ds-modules"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][beacon.technology].effects, { type = "unlock-recipe", recipe = beacon.name })
+
+    data:extend({ entity, item,
+    {
+        type = "recipe",
+        name = beacon.name,
+        enabled = false,
+        ingredients = beacon.ingredients,
+        result = beacon.name
+    }})
 end

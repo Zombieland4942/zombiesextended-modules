@@ -13,5 +13,14 @@ for x, effectivity_module in pairs(effectivity_modules) do
     item.tier = effectivity_module.teir
     item.effect = { consumption = {bonus = effectivity_module.energy_consumption}}
 
-    data:extend({ item })
+    table.insert(data.raw["technology"][effectivity_module.technology].effects, { type = "unlock-recipe", recipe = effectivity_module.name })
+
+    data:extend({ entity, item,
+    {
+        type = "recipe",
+        name = effectivity_module.name,
+        enabled = false,
+        ingredients = effectivity_module.ingredients,
+        result = effectivity_module.name
+    }})
 end
