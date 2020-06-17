@@ -16,9 +16,11 @@ for x, beacon in pairs(beacons) do
     entity.module_specification.module_slots = beacon.module_slots
     entity.supply_area_distance = beacon.supply_area
     
-    entity.base_picture.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-base.png"
-    entity.animation.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-antenna.png"
-    
+    entity.graphics_set.animation_list[1].animation.layers[1].filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-bottom.png"
+    entity.graphics_set.animation_list[1].animation.layers[1].hr_version.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-bottom.png"
+    entity.graphics_set.animation_list[2].animation.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-top.png"
+    entity.graphics_set.animation_list[2].animation.hr_version.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-top.png"
+
     item.name = beacon.name
     item.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
     item.place_result = beacon.name
