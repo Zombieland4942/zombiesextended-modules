@@ -8,7 +8,7 @@ for x, beacon in pairs(beacons) do
     item = util.table.deepcopy(item_base)
 
     entity.name = beacon.name    
-    entity.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
+    entity.icon = "__zombiesextended-modules__/graphics/icons/" .. beacon.name .. ".png"
     entity.minable.result = beacon.name
     entity.max_health = beacon.health
     entity.energy_usage = beacon.energy_con_kw .. "kW"
@@ -16,13 +16,13 @@ for x, beacon in pairs(beacons) do
     entity.module_specification.module_slots = beacon.module_slots
     entity.supply_area_distance = beacon.supply_area
     
-    entity.graphics_set.animation_list[1].animation.layers[1].filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-bottom.png"
-    entity.graphics_set.animation_list[1].animation.layers[1].hr_version.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-bottom.png"
-    entity.graphics_set.animation_list[2].animation.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/beacon-top.png"
-    entity.graphics_set.animation_list[2].animation.hr_version.filename = "__darkstar-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-top.png"
+    entity.graphics_set.animation_list[1].animation.layers[1].filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/beacon-bottom.png"
+    entity.graphics_set.animation_list[1].animation.layers[1].hr_version.filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-bottom.png"
+    entity.graphics_set.animation_list[2].animation.filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/beacon-top.png"
+    entity.graphics_set.animation_list[2].animation.hr_version.filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-top.png"
 
     item.name = beacon.name
-    item.icon = "__darkstar-modules__/graphics/icons/" .. beacon.name .. ".png"
+    item.icon = "__zombiesextended-modules__/graphics/icons/" .. beacon.name .. ".png"
     item.place_result = beacon.name
     item.order = beacon.order
     item.subgroup = "ds-modules"
