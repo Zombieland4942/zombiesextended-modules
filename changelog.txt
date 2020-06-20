@@ -3,3 +3,9 @@ Version: 0.0.1
 Date: 2020-06-19
   Changes:
     - Intial creation of mod in v18
+---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2020-06-21
+  Changes:
+    - Added a new Module Mask to all Beacons so the new high tier modules render properly.
+    - Added Pollution Reduction to Effectivity Modules

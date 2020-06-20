@@ -17,7 +17,7 @@ for x, productivity_module in pairs(productivity_modules) do
                     pollution = {bonus = productivity_module.pollution},
                     speed = {bonus = productivity_module.speed}
                   }
-    
+
     table.insert(data.raw["technology"][productivity_module.technology].effects, { type = "unlock-recipe", recipe = productivity_module.name })
 
     data:extend({ entity, item,

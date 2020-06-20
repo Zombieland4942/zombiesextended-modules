@@ -11,7 +11,13 @@ for x, effectivity_module in pairs(effectivity_modules) do
     item.order = effectivity_module.order
     item.subgroup = "ds-modules"
     item.tier = effectivity_module.teir
-    item.effect = { consumption = {bonus = effectivity_module.energy_consumption}}
+    item.effect = { 
+                    consumption = { bonus = effectivity_module.energy_consumption },
+                    pollution = { bonus = effectivity_module.pollution }
+                  }
+
+    --item.beacon_tint.primary = { 0, 1, 0 }, -- #70b6ffff
+    item.beacon_tint.secondary = {r = 184.5, g = 0, b = 253.7, a = 230}, -- #b900fe
 
     table.insert(data.raw["technology"][effectivity_module.technology].effects, { type = "unlock-recipe", recipe = effectivity_module.name })
 

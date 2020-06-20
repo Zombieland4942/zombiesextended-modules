@@ -1,4 +1,18 @@
 
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.filename = "__zombiesextended-modules__/graphics/entity/beacon-base/beacon-module-mask-lights-1.png"
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.line_length = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.variation_count = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.hr_version.filename = "__zombiesextended-modules__/graphics/entity/beacon-base/hr-beacon-module-mask-lights-1.png"    
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.hr_version.line_length = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[1][3].pictures.hr_version.variation_count = 9
+
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.filename = "__zombiesextended-modules__/graphics/entity/beacon-base/beacon-module-mask-lights-2.png"
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.line_length = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.variation_count = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.hr_version.filename = "__zombiesextended-modules__/graphics/entity/beacon-base/hr-beacon-module-mask-lights-2.png"    
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.hr_version.line_length = 9
+data.raw["beacon"]["beacon"].graphics_set.module_visualisations[1].slots[2][3].pictures.hr_version.variation_count = 9
+
 local entity_base = util.table.deepcopy(data.raw["beacon"]["beacon"])
 local item_base = util.table.deepcopy(data.raw["item"]["beacon"])
 
