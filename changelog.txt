@@ -9,3 +9,8 @@ Date: 2020-06-21
   Changes:
     - Added a new Module Mask to all Beacons so the new high tier modules render properly.
     - Added Pollution Reduction to Effectivity Modules
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2020-06-22
+  Changes:
+    - Decided to revert module indicator color to white

@@ -17,7 +17,7 @@ for x, effectivity_module in pairs(effectivity_modules) do
                   }
 
     --item.beacon_tint.primary = { 0, 1, 0 }, -- #70b6ffff
-    item.beacon_tint.secondary = {r = 184.5, g = 0, b = 253.7, a = 230}, -- #b900fe
+    item.beacon_tint.secondary = {r = 255, g = 255, b = 255, a = 255}, -- #ffffff
 
     table.insert(data.raw["technology"][effectivity_module.technology].effects, { type = "unlock-recipe", recipe = effectivity_module.name })
 
