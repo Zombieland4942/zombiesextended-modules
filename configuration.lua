@@ -30,19 +30,19 @@ beacons = {
 }
 
 speed_modules = {
-    { order = "b-a", name = "speed-module-mk1", energy_consumption = 1, speed = 1, teir = 4, ingredients = { {"speed-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk1" },
-    { order = "b-b", name = "speed-module-mk2", energy_consumption = 1.5, speed = 1.5, teir = 5, ingredients = { {"speed-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk2" },
-    { order = "b-c", name = "speed-module-mk3", energy_consumption = 2, speed = 2, teir = 6, ingredients = { {"speed-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk3" },
+    { order = "b-a", name = "speed-module-mk1", energy_consumption = 1, speed = 1, teir = 4, energy_required = 120, ingredients = { {"speed-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk1" },
+    { order = "b-b", name = "speed-module-mk2", energy_consumption = 1.5, speed = 1.5, teir = 5, energy_required = 240, ingredients = { {"speed-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk2" },
+    { order = "b-c", name = "speed-module-mk3", energy_consumption = 2, speed = 2, teir = 6, energy_required = 480, ingredients = { {"speed-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "speed-module-mk3" },
 }
 
 effectivity_modules = {
-    { order = "c-a", name = "effectivity-module-mk1", energy_consumption = -1, pollution = -0.2, teir = 4, ingredients = { {"effectivity-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk1" },
-    { order = "c-b", name = "effectivity-module-mk2", energy_consumption = -2, pollution = -0.4, teir = 5, ingredients = { {"effectivity-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk2" },
-    { order = "c-c", name = "effectivity-module-mk3", energy_consumption = -3, pollution = -0.8, teir = 6, ingredients = { {"effectivity-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk3" },
+    { order = "c-a", name = "effectivity-module-mk1", energy_consumption = -1, pollution = -0.2, teir = 4, energy_required = 120, ingredients = { {"effectivity-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk1" },
+    { order = "c-b", name = "effectivity-module-mk2", energy_consumption = -2, pollution = -0.4, teir = 5, energy_required = 240, ingredients = { {"effectivity-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk2" },
+    { order = "c-c", name = "effectivity-module-mk3", energy_consumption = -3, pollution = -0.8, teir = 6, energy_required = 480, ingredients = { {"effectivity-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "effectivity-module-mk3" },
 }
 
 productivity_modules = {
-    { order = "d-a", name = "productivity-module-mk1", productivity = 0.2, energy_consumption = 1, pollution = 0.15, speed = -0.15, teir = 4, ingredients = { {"productivity-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk1" },
-    { order = "d-b", name = "productivity-module-mk2", productivity = 0.3, energy_consumption = 1.2, pollution = 0.2, speed = -0.15, teir = 5, ingredients = { {"productivity-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk2" },
-    { order = "d-c", name = "productivity-module-mk3", productivity = 0.4, energy_consumption = 1.6, pollution = 0.3, speed = -0.15, teir = 6, ingredients = { {"productivity-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk3" },
+    { order = "d-a", name = "productivity-module-mk1", productivity = 0.2, energy_consumption = 1, pollution = 0.15, speed = -0.15, teir = 4, energy_required = 120, ingredients = { {"productivity-module-3", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk1" },
+    { order = "d-b", name = "productivity-module-mk2", productivity = 0.3, energy_consumption = 1.2, pollution = 0.2, speed = -0.15, teir = 5, energy_required = 240, ingredients = { {"productivity-module-mk1", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk2" },
+    { order = "d-c", name = "productivity-module-mk3", productivity = 0.4, energy_consumption = 1.6, pollution = 0.3, speed = -0.15, teir = 6, energy_required = 480, ingredients = { {"productivity-module-mk2", 3},{"complex-processing-unit", 20},{"vibranium-plate", 30} }, technology = "productivity-module-mk3" },
 }

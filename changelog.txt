@@ -14,3 +14,9 @@ Version: 0.0.3
 Date: 2020-06-22
   Changes:
     - Decided to revert module indicator color to white
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2020-08-08
+  Changes:
+    - Updated Module Graphics - Provided by Kythblood on the mod portal.
+    - Also added energy_required to each module.

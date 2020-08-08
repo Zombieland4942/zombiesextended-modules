@@ -13,8 +13,7 @@ for x, speed_module in pairs(speed_modules) do
     item.tier = speed_module.teir
     item.effect = { speed = {bonus = speed_module.speed}, consumption = {bonus = speed_module.energy_consumption}}
     
-    --item.beacon_tint.primary = { 0, 1, 0 }, -- #70b6ffff
-    item.beacon_tint.secondary = {r = 255, g = 255, b = 255, a = 255}, -- #ffffff
+    item.beacon_tint.primary = { 65, 65, 65 },
 
     table.insert(data.raw["technology"][speed_module.technology].effects, { type = "unlock-recipe", recipe = speed_module.name })
 
@@ -23,6 +22,7 @@ for x, speed_module in pairs(speed_modules) do
         type = "recipe",
         name = speed_module.name,
         enabled = false,
+        energy_required = speed_module.energy_required,
         ingredients = speed_module.ingredients,
         result = speed_module.name
     }})

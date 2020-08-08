@@ -25,6 +25,7 @@ for x, productivity_module in pairs(productivity_modules) do
         type = "recipe",
         name = productivity_module.name,
         enabled = false,
+        energy_required = productivity_module.energy_required,
         ingredients = productivity_module.ingredients,
         result = productivity_module.name
     }})

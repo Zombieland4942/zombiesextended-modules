@@ -16,8 +16,7 @@ for x, effectivity_module in pairs(effectivity_modules) do
                     pollution = { bonus = effectivity_module.pollution }
                   }
 
-    --item.beacon_tint.primary = { 0, 1, 0 }, -- #70b6ffff
-    item.beacon_tint.secondary = {r = 255, g = 255, b = 255, a = 255}, -- #ffffff
+    item.beacon_tint.primary = { 65, 65, 65 },
 
     table.insert(data.raw["technology"][effectivity_module.technology].effects, { type = "unlock-recipe", recipe = effectivity_module.name })
 
@@ -26,6 +25,7 @@ for x, effectivity_module in pairs(effectivity_modules) do
         type = "recipe",
         name = effectivity_module.name,
         enabled = false,
+        energy_required = effectivity_module.energy_required,
         ingredients = effectivity_module.ingredients,
         result = effectivity_module.name
     }})
