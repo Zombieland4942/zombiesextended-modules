@@ -1,14 +1,15 @@
 {
     "name": "zombiesextended-modules",
-    "version": "0.0.4",
+    "version": "1.0.0",
     "title": "Zombies Extended Modules",
     "author": "zombieland4942",
     "contact": "",
     "homepage": "https://github.com/Zombieland4942/zombiesextended-modules",
     "dependencies": [
-        "base >= 0.18.31",
-        "zombiesextended-core >= 0.0.1"
+        "base >= 1.0.0",
+        "zombiesextended-core >= 1.0.0",
+        "?zombiesextended-power"
     ],
     "description": "ZombiesExtended Modules adds more Powerful modules and Beacons. This mod is still being tuned, please check the changelog before upgrading the mod. Ps. No Zombies are added.",
-    "factorio_version": "0.18"
+    "factorio_version": "1.0"
 }

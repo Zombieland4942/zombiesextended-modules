@@ -1,8 +1,19 @@
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.1
-Date: 2020-06-19
+Version: 1.0.0
+Date: 2020-08-28
   Changes:
-    - Intial creation of mod in v18
+    - Updated for Factorio v1
+---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 2020-08-08
+  Changes:
+    - Updated Module Graphics - Provided by Kythblood on the mod portal.
+    - Also added energy_required to each module.
+---------------------------------------------------------------------------------------------------
+Version: 0.0.3
+Date: 2020-06-22
+  Changes:
+    - Decided to revert module indicator color to white
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
 Date: 2020-06-21
@@ -10,13 +21,7 @@ Date: 2020-06-21
     - Added a new Module Mask to all Beacons so the new high tier modules render properly.
     - Added Pollution Reduction to Effectivity Modules
 ---------------------------------------------------------------------------------------------------
-Version: 0.0.3
-Date: 2020-06-22
+Version: 0.0.1
+Date: 2020-06-19
   Changes:
-    - Decided to revert module indicator color to white
----------------------------------------------------------------------------------------------------
-Version: 0.0.4
-Date: 2020-08-08
-  Changes:
-    - Updated Module Graphics - Provided by Kythblood on the mod portal.
-    - Also added energy_required to each module.
+    - Intial creation of mod in v18
