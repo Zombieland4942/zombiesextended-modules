@@ -23,10 +23,14 @@ technologies = {
     { order = "a-d-c", name = "productivity-module-mk3", count = 800, time = 60, prerequisite = {"productivity-module-mk2"}, ingredients = science_t6 },
 }
 
+-- Need to mod some vanilla items in order for the upgrade planner to work
+data.raw["beacon"]["beacon"].fast_replaceable_group = "beacon"
+data.raw["beacon"]["beacon"].next_upgrade = "beacon-mk1"
+
 beacons = {
-    { order = "a-a", name = "beacon-mk1", health = 200, efficiency = 1, energy_con_kw = 960, supply_area = 3, module_slots = 2, ingredients = { {"beacon", 2},{"complex-processing-unit", 10} }, technology = "effect-transmission-mk1" },
-    { order = "a-b", name = "beacon-mk2", health = 200, efficiency = 2, energy_con_kw = 1920, supply_area = 3, module_slots = 2, ingredients = { {"beacon-mk1", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk2" },
-    { order = "a-c", name = "beacon-mk3", health = 200, efficiency = 3, energy_con_kw = 3840, supply_area = 3, module_slots = 2, ingredients = { {"beacon-mk2", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk3" },
+    { order = "a-a", name = "beacon-mk1", health = 200, efficiency = 1, energy_con_kw = 960, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk2", ingredients = { {"beacon", 2},{"complex-processing-unit", 10} }, technology = "effect-transmission-mk1" },
+    { order = "a-b", name = "beacon-mk2", health = 200, efficiency = 2, energy_con_kw = 1920, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk3", ingredients = { {"beacon-mk1", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk2" },
+    { order = "a-c", name = "beacon-mk3", health = 200, efficiency = 3, energy_con_kw = 3840, supply_area = 3, module_slots = 2, next_upgrade = "", ingredients = { {"beacon-mk2", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk3" },
 }
 
 speed_modules = {

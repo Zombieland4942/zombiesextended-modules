@@ -29,7 +29,8 @@ for x, beacon in pairs(beacons) do
     entity.distribution_effectivity = beacon.efficiency
     entity.module_specification.module_slots = beacon.module_slots
     entity.supply_area_distance = beacon.supply_area
-    
+    entity.next_upgrade = beacon.next_upgrade
+
     entity.graphics_set.animation_list[1].animation.layers[1].filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/beacon-bottom.png"
     entity.graphics_set.animation_list[1].animation.layers[1].hr_version.filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/hr-beacon-bottom.png"
     entity.graphics_set.animation_list[2].animation.filename = "__zombiesextended-modules__/graphics/entity/" .. beacon.name .. "/beacon-top.png"
