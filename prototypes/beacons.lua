@@ -39,8 +39,11 @@ for x, beacon in pairs(beacons) do
     item.name = beacon.name
     item.icon = "__zombiesextended-modules__/graphics/icons/" .. beacon.name .. ".png"
     item.place_result = beacon.name
-    item.order = beacon.order
-    item.subgroup = "ds-modules"
+    item.order = item.order .. beacon.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-modules"
+    end
 
     table.insert(data.raw["technology"][beacon.technology].effects, { type = "unlock-recipe", recipe = beacon.name })
 

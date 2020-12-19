@@ -2,6 +2,8 @@
 Version: 1.0.3
 Date: ????
   Changes:
+    - Added new experimental setting to relocate items into their normal vanilla locations
+    - Updated all items in Modules to respect the new setting above
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2020-11-24

@@ -7,9 +7,7 @@ for x, productivity_module in pairs(productivity_modules) do
 
     item.name = productivity_module.name
     item.localised_name = { "module-name.productivity", productivity_module.teir }
-    item.icon = "__zombiesextended-modules__/graphics/icons/" .. productivity_module.name .. ".png"    
-    item.order = productivity_module.order
-    item.subgroup = "ds-modules"
+    item.icon = "__zombiesextended-modules__/graphics/icons/" .. productivity_module.name .. ".png"
     item.tier = productivity_module.teir
     item.effect = {
                     productivity = {bonus = productivity_module.productivity},
@@ -17,7 +15,12 @@ for x, productivity_module in pairs(productivity_modules) do
                     pollution = {bonus = productivity_module.pollution},
                     speed = {bonus = productivity_module.speed}
                   }
+    item.order = item.order .. productivity_module.order
 
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-modules"
+    end
+    
     table.insert(data.raw["technology"][productivity_module.technology].effects, { type = "unlock-recipe", recipe = productivity_module.name })
 
     data:extend({ entity, item,

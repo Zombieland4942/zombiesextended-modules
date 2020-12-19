@@ -8,10 +8,14 @@ for x, speed_module in pairs(speed_modules) do
     item.name = speed_module.name
     item.localised_name = { "module-name.speed", speed_module.teir }
     item.icon = "__zombiesextended-modules__/graphics/icons/" .. speed_module.name .. ".png"    
-    item.order = speed_module.order
-    item.subgroup = "ds-modules"
     item.tier = speed_module.teir
     item.effect = { speed = {bonus = speed_module.speed}, consumption = {bonus = speed_module.energy_consumption}}
+    
+    item.order = item.order .. speed_module.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then        
+        item.subgroup = "ds-modules"
+    end
     
     item.beacon_tint.primary = { 65, 65, 65 },
 
