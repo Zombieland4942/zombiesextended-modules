@@ -28,9 +28,9 @@ data.raw["beacon"]["beacon"].fast_replaceable_group = "beacon"
 data.raw["beacon"]["beacon"].next_upgrade = "beacon-mk1"
 
 beacons = {
-    { order = "a", name = "beacon-mk1", health = 200, efficiency = 1, energy_con_kw = 960, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk2", ingredients = { {"beacon", 2},{"complex-processing-unit", 10} }, technology = "effect-transmission-mk1" },
-    { order = "b", name = "beacon-mk2", health = 200, efficiency = 2, energy_con_kw = 1920, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk3", ingredients = { {"beacon-mk1", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk2" },
-    { order = "c", name = "beacon-mk3", health = 200, efficiency = 3, energy_con_kw = 3840, supply_area = 3, module_slots = 2, next_upgrade = "", ingredients = { {"beacon-mk2", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk3" },
+    { order = "a", name = "beacon-mk1", health = 200, efficiency = 1, energy_con_kw = 960, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk2", craft_time = mk1_craft_time, ingredients = { {"beacon", 2},{"complex-processing-unit", 10} }, technology = "effect-transmission-mk1" },
+    { order = "b", name = "beacon-mk2", health = 200, efficiency = 2, energy_con_kw = 1920, supply_area = 3, module_slots = 2, next_upgrade = "beacon-mk3", craft_time = mk2_craft_time, ingredients = { {"beacon-mk1", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk2" },
+    { order = "c", name = "beacon-mk3", health = 200, efficiency = 3, energy_con_kw = 3840, supply_area = 3, module_slots = 2, next_upgrade = "", craft_time = mk3_craft_time, ingredients = { {"beacon-mk2", 2},{"complex-processing-unit", 10},{"vibranium-plate", 30} }, technology = "effect-transmission-mk3" },
 }
 
 speed_modules = {

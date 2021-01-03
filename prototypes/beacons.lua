@@ -52,6 +52,7 @@ for x, beacon in pairs(beacons) do
         type = "recipe",
         name = beacon.name,
         enabled = false,
+        energy_required = beacon.craft_time,
         ingredients = beacon.ingredients,
         result = beacon.name
     }})
